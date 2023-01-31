@@ -8,7 +8,8 @@ body {
 	background: #686464;
 	margin-top: 2rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .lista-tarefa {
 	width: 41vw;
@@ -29,8 +30,9 @@ body {
     background: rgb(255, 0, 8);
     color: rgb(255, 255, 255);
     padding: 3.5%;
-    width: 93%;
-    
+    width: 33%;
+    border-radius: 1em;
+    margin: 1em;    
     }
 
 .cabecario-tarefa{
@@ -38,9 +40,9 @@ body {
     align-items: center;
     justify-content: space-around;
     background-color: #3f3a3a;
-    border-radius: 0em 0em 0 0;
+    border-radius: 1em 1em 0 0;
     padding: 2vw 5%;
-    margin-bottom: -1em;
+    margin-bottom: 1em;
     width: 90%;
     height: 10vw;
 }
@@ -57,17 +59,18 @@ body {
 }
 
 .adicionar-tarefa-btn{
-    cursor: pointer;
-    width: 3.5vw;
-    min-height: 3.5vw;
-    background-color: rgb(255, 5, 8);
+    border-radius: 1em;
     margin-left: 7%;
-    font-size: 2vw;
-    padding: 0 .2em;
-    border-radius: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 1em;
+    font-weight: 700;
+}
+.adicionar-tarefa-btn:hover{
+    transition: .5s;
+    color: azure;
+    background: black;
+
 }
 
 .corpo-tarefas{
@@ -81,14 +84,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(189, 78, 78);
-    width: 41vw;
     height: 98%;
-    margin: 0 0 0 0;
     border-radius: 0em 0em .9em .9em;
+}
+button{
+    cursor: pointer;
+    border: none;
 }
 i{
     color: black;
+    font-size: 1.5em;
+    padding: 5px;
+    background-color: #b3aaaa;
+    border: none;
 }
 
 li{
@@ -96,8 +104,15 @@ li{
     background-color: rgb(221, 217, 213);
     border-style: none;
     border-radius: .4em;
-    margin: 1%;
-    margin-top: 1vw;
+    margin: 2%;
     padding: 1.5vw;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+input[type=checkbox]{  
+    width: 4vw;
+    cursor: pointer;
 }

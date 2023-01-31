@@ -73,7 +73,7 @@
             var value = this.taskInput.value
             this.errorMessage.style.display = "none"
 
-            if(value = ""){
+            if(value == ""){
                 this.error()
             } else{
                 this.render()
